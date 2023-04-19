@@ -11,28 +11,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   
   <title>Interactive Pricing Component</title>
- <div class="intro-container">
-  <h1 class="intro__heading"> Simple, traffic-based pricing</h1>
-  <p class="intro__content">Sign-up for our 30-day trial. No credit card required. </p>
-  <img src="images/pattern-circles.svg" alt="" class="pattern-circles">
- </div>
-
- <div class="price-container">
-  <label for="slider" class="page-views">100k pageviews</label>
-  <input type="range" name="slider" id="">
-  <div class="price-part"><span class="price">$16.00</span> <span class="time">/ month</span></div>
-  <ul class="features">
-    <li class="feature"> <img src="images/icon-check.svg" alt=""> Unlimited websites</li>
-    <li class="feature">  <img src="images/icon-check.svg" alt=""> 100% data ownership</li>
-    <li class="feature">  <img src="images/icon-check.svg" alt="">  Email reports</li>
-   </ul> 
-</div>
  
 
 
+ 
 </head>
 <body>
-
+  <div class="intro-container">
+    <h1 class="intro__heading"> Simple, traffic-based pricing</h1>
+    <p class="intro__content">Sign-up for our 30-day trial. No credit card required. </p>
+    <img src="images/pattern-circles.svg" alt="" class="pattern-circles">
+   </div>
+  
+   <div class="price-container">
+    <label for="slider" class="page-views"><span class="views">10k</span> pageviews</label>
+    <input type="range" name="slider" id="price-slider" class="range-slider" value="8" min="8" max="36" >
+  
+  <div class="billing">
+    <p class="monthly">Monthly Billing</p>
+    <label class="switch">
+      <input type="checkbox" name="" id="" class="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <p class="yearly">Yearly Billing</p>
+    <p class="p-25">-25%</p>
+    <p class="p-25-pc">-25% discount</p>
+  </div>
+  
+  
+  
+    <div class="price-part"><span class="price">$8.00</span> <span class="time">/ month</span></div>
+    
+    <hr>
+    <div class="details">
+    <ul class="features">
+      <li class="feature"> <img src="images/icon-check.svg" alt=""> Unlimited websites</li>
+      <li class="feature">  <img src="images/icon-check.svg" alt=""> 100% data ownership</li>
+      <li class="feature">  <img src="images/icon-check.svg" alt="">  Email reports</li>
+     </ul> 
+  
+     <button class="btn">Start my trial</button>
+    </div>
+  </div>
+  
 
 <!-- 
   Simple, traffic-based pricing
